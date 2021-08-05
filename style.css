@@ -1,0 +1,79 @@
+@import "keyframes.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+.game-container {
+    width: 650px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sky {
+    width: 100%;
+    height: 85%;
+    background: url(assets/sky.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+.ground {
+
+    width: 100%;
+    height: 20%;
+    background: url(assets/ground.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 80%;
+    z-index: 1;
+}
+
+.obstacle {
+    width: 75px;
+    height: 500px;
+    background-color: green;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* animation: moveObstacle 5s linear infinite;  */
+}
+
+/* .hole {
+    height: 100px;
+    background-color: #fff;
+} */
+
+.bird {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /* top: 50%; */
+    background: transparent url(assets/bird.png) no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+.score {
+    position: absolute;
+    max-width: 100px;
+    height: 50px;
+    border: 2px solid yellow;
+    font-size: 40px;
+    text-align: center;
+    z-index: 1;
+    left: 48%;
+    top: 3%;
+}
+
+.score>span {
+    padding: 0 10px;
+}

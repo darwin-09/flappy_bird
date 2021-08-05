@@ -1,0 +1,9 @@
+@keyframes moveObstacle {
+    from {
+        right: -75px;
+    }
+
+    to {
+        right: 650px;
+    }
+}
